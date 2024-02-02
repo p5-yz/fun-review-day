@@ -1,8 +1,10 @@
-const {
-  createPoll,
-  makeNameTags,
-} = require("../sections/1-human-resources.js");
+const {makeNameTags, createPoll} = require("../sections/1-human-resources.js");
 
-describe("function name here...", () => {
-  test("first test here...", () => {});
+describe("makeNameTags: ", () => {
+  test("should have an array of objects", () => {
+    const arrObj = [{},{}]
+    const actualOutput = makeNameTags(arrObj)
+    expect(actualOutput).toEqual(arrObj)
+  })
+  
 });
